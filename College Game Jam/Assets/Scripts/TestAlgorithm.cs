@@ -7,23 +7,26 @@ public class TestAlgorithm : MonoBehaviour
     private enum dangoColor {green, pink, white}
     dangoColor curr = dangoColor.green; // just setting defualt to green :)
 
-    private dangoColor[] recipe; // change to list 
+    private List<dangoColor> fullSequence = new List<dangoColor>();
+    private List<dangoColor> recipe = new List<dangoColor>();
 
-    // TODO: have count for reg fruit/random fruit
-    // use this count to build the sequence
-    // 
+    private int target;
+    private int random;
 
     // Start is called before the first frame update
     void Start()
     {
-        
-
-        for (int i = 0; i < 10; i++) { // make at most 3 times the recipe
-        // append instead
-            curr = (dangoColor)Random.Range(0, 2);
-            recipe[i] = curr; //builds the recipe sequence
+        buildSequence();
+        Debug.Log("Actual Recipe");
+        foreach (dangoColor i in recipe)
+        {
+            Debug.Log(i);
         }
-        
+        Debug.Log("Full Sequence");
+        foreach (dangoColor j in fullSequence)
+        {
+            Debug.Log(j);
+        }
     }
 
     // Update is called once per frame
@@ -31,4 +34,32 @@ public class TestAlgorithm : MonoBehaviour
     {
         
     }
+
+    private void buildSequence() {
+        target = Random.Range(6, 12); // recipe could have 6 - 12 needed "ingredients"
+        random = target * Random.Range(1, 2); // make at most 3 times the recipe
+
+        int sequenceLength = target + random;
+
+        for (int i = 0; i < (sequenceLength); i++)
+        {
+            int addTarget = Random.Range(0, 2);
+            target = target - addTarget;
+            for (int j = 0; j < addTarget; j++) 
+            {
+                curr = (dangoColor)Random.Range(0, 3);
+                fullSequence.Add(curr);
+                recipe.Add(curr);
+            }
+
+            int addRandom = Random.Range(0, random);
+            random = random - addRandom;
+            for (int j = 0; j < addRandom; j++) 
+            {
+                curr = (dangoColor)Random.Range(0, 3);
+                fullSequence.Add(curr);
+            }
+        }
+    }
+
 }
