@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestAlgorithm : MonoBehaviour
+public class dangoAlgo : MonoBehaviour
 {
     private enum dangoColor {green, pink, white}
-    dangoColor curr = dangoColor.green; // just setting defualt to green :)
 
     private List<dangoColor> fullSequence = new List<dangoColor>();
     private List<dangoColor> recipe = new List<dangoColor>();
@@ -17,16 +16,16 @@ public class TestAlgorithm : MonoBehaviour
     void Start()
     {
         buildSequence();
-        Debug.Log("Actual Recipe");
-        foreach (dangoColor i in recipe)
-        {
-            Debug.Log(i);
-        }
-        Debug.Log("Full Sequence");
-        foreach (dangoColor j in fullSequence)
-        {
-            Debug.Log(j);
-        }
+        // Debug.Log("Actual Recipe");
+        // foreach (dangoColor i in recipe)
+        // {
+        //     Debug.Log(i);
+        // }
+        // Debug.Log("Full Sequence");
+        // foreach (dangoColor j in fullSequence)
+        // {
+        //     Debug.Log(j);
+        // }
     }
 
     // Update is called once per frame
@@ -36,6 +35,8 @@ public class TestAlgorithm : MonoBehaviour
     }
 
     private void buildSequence() {
+        dangoColor curr = dangoColor.green; // just setting default to green :)
+
         target = Random.Range(6, 12); // recipe could have 6 - 12 needed "ingredients"
         random = target * Random.Range(1, 2); // make at most 3 times the recipe
 
