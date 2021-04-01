@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("StartScene"); //very specific names! make sure they match in unity :D
     }
+    public void GameScreen()
+    {
+        SceneManager.LoadScene("Game");
+    }
     public void Credits()
     {
         SceneManager.LoadScene("Credits");
