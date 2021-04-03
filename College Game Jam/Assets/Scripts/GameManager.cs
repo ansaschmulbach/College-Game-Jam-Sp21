@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance = null;
+    public GameState gameState = new GameState();
 
     #region Unity_functions
     private void Awake()

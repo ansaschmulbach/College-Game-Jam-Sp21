@@ -264,7 +264,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3361562316796264917, guid: 61c8fd9677fb34ce291e7f53600eac34,
+  m_Sprite: {fileID: -2133657282214759049, guid: 893175a45966d4be98ce3774e6660098,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -283,13 +283,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 707096529}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.042, y: -5.758, z: 0}
-  m_LocalScale: {x: 0.20182592, y: 3.4930985, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.33, y: -11.62, z: 0}
+  m_LocalScale: {x: 1.5, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!114 &707096532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,18 +316,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -8.261863, y: -0.030261993}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.692936, y: 5.6600003}
+    oldSize: {x: 17.56, y: 0.21}
     newSize: {x: 5.692936, y: 5.6600003}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.692936, y: 5.6600003}
+  m_Size: {x: 2.3713975, y: 0.7693074}
   m_EdgeRadius: 0
 --- !u!50 &707096534
 Rigidbody2D:
@@ -362,6 +362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd990a07366194d219ae8975b51e4dbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSkewered: 2
+  topItemY: -2
 --- !u!1 &953708087
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,8 +395,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruitPrototypes:
   - {fileID: 4064167683559092358, guid: 83f3f968ae95a4df0901f50f1b84b748, type: 3}
-  - {fileID: 4064167683559092358, guid: 83f3f968ae95a4df0901f50f1b84b748, type: 3}
-  - {fileID: 4064167683559092358, guid: 83f3f968ae95a4df0901f50f1b84b748, type: 3}
+  - {fileID: 4064167683559092358, guid: f03fd41f5d98342cba7118b241867fd4, type: 3}
+  - {fileID: 4064167683559092358, guid: 93993a24a6b0a4b568ae984ae00193f0, type: 3}
+  - {fileID: 4064167683559092358, guid: cec59f9fcf428456a94b254d5da85c81, type: 3}
+  - {fileID: 4064167683559092358, guid: cec59f9fcf428456a94b254d5da85c81, type: 3}
   - {fileID: 4064167683559092358, guid: 83f3f968ae95a4df0901f50f1b84b748, type: 3}
   fruitSpawnDelay: 3
 --- !u!4 &953708089
