@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     }
     public void GameScreen()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("AssemblyScene");
     }
     public void Credits()
     {
