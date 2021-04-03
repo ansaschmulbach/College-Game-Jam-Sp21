@@ -1,85 +1,64 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class recipeAlgo : MonoBehaviour
 {
-    private enum dangoColor {green, pink, white}
-    private enum fruits {strawberry, banana, kiwi, tangerine}
+    // private enum dangoColor {green, pink, white}
+    // private enum fruits {strawberry, banana, kiwi, tangerine}
 
-    private List<gameObject> fullSequence = new List<gameObject>();
-    private List<gameObject> recipe = new List<gameObject>();
+    #region Inspector Variables
 
-    private int target = 6;
-    private int random = 12;
+    [SerializeField] [Tooltip("how long the recipe is")] private int target = 6;
+    [SerializeField] [Tooltip("how many random fruits there are")] private int random = 12;
+    [SerializeField] [Tooltip("all fruit prototypes")] private List<GameObject> fruits;
+    [SerializeField] [Tooltip("all fruit prototypes")] private List<GameObject> dango;
+    
+    #endregion
 
-    // Start is called before the first frame update
+
+    #region Private Variables
+
+    private List<GameObject> fullSequence = new List<GameObject>();
+    private List<GameObject> recipe = new List<GameObject>();
+
+    #endregion
+
+
     void Start()
     {
-        // mode being some sort of choice the player makes whether they want to make a fruit kebab or dango... or could be random? 
-        // String mode = "fruits"; //debugging purposes
-        // if (mode.equals("dango")) {
-        //     buildDangoSequence();
-        // }
-        // if (mode.equals("fruits")) {
-        //     buildFruitSequence();
-        // }
-        // just testing fruit
         buildFruitSequence();
 
         Debug.Log("Actual Recipe Length: ");
         Debug.Log(recipe.Count);
-        foreach (fruits i in recipe)
+        foreach (GameObject i in recipe)
         {
-            Debug.Log(i);
+            Debug.Log(i.name);
         }
         Debug.Log("Full Sequence Length: ");
         Debug.Log(fullSequence.Count);
-        foreach (fruits j in fullSequence)
+        foreach (GameObject j in fullSequence)
         {
-            Debug.Log(j);
+            Debug.Log(j.name);
         }
+
+        GameManager.Instance.gameState.recipe = recipe;
+        GameManager.Instance.gameState.fullSequence = fullSequence;
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
-    }
-
-    private void buildDangoSequence() {
-        dangoColor curr = dangoColor.green; // just setting default to green :)
-    
-        random = target * Random.Range(1, 2); // make at most 3 times the recipe
-
-        int sequenceLength = target + random;
-
-        for (int i = 0; i < (sequenceLength); i++)
+        if (Input.GetKeyDown("space"))
         {
-            int addTarget = Random.Range(0, 2);
-            target = target - addTarget;
-            for (int j = 0; j < addTarget; j++) 
-            {
-                curr = (dangoColor)Random.Range(0, 3);
-                fullDangoSequence.Add(curr);
-                dangoRecipe.Add(curr);
-            }
-
-            int addRandom = Random.Range(0, random);
-            random = random - addRandom;
-            for (int j = 0; j < addRandom; j++) 
-            {
-                curr = (dangoColor)Random.Range(0, 3);
-                fullDangoSequence.Add(curr);
-            }
+            GameManager.Instance.GameScreen();
         }
     }
 
     private void buildFruitSequence() {
-        fruits curr = fruits.kiwi; // just setting default to kiwi for now :)
-
-        target = 6;
-        random = target * (Random.Range(1, 2)); // make at most 3 times the recipe
+        GameObject curr = null; // just setting default to kiwi for now :)
 
         int sequenceLength = target + random;
 
@@ -87,18 +66,20 @@ public class recipeAlgo : MonoBehaviour
         {
             int addTarget = Random.Range(0, target);
             target = target - addTarget;
-            for (int j = 0; j < addTarget; j++) 
+            for (int j = 0; j < addTarget; j++)
             {
-                curr = (fruits)Random.Range(0, 4);
+                int n = Random.Range(0, fruits.Count);
+                curr = fruits[n];
                 fullSequence.Add(curr);
                 recipe.Add(curr);
             }
 
             int addRandom = Random.Range(2, random);
             random = random - addRandom;
-            for (int j = 0; j < addRandom; j++) 
+            for (int j = 0; j < addRandom; j++)
             {
-                curr = (fruits)Random.Range(0, 4);
+                int n = Random.Range(0, fruits.Count);
+                curr = fruits[n];
                 fullSequence.Add(curr);
             }
         }

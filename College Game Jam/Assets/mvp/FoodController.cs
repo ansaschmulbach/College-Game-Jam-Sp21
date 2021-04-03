@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
+using UnityEngine.UIElements;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -23,11 +24,12 @@ public class FoodController : MonoBehaviour
 
     #region Private Variables
 
-    private Rigidbody2D rb;
+    [SerializeField]private bool frozen;
 
     #endregion
 
     public bool skewered;
+    public float maxYCoordinate;
     
     #region Instantiation Methods
 
@@ -37,6 +39,7 @@ public class FoodController : MonoBehaviour
         this.transform.position = new Vector3(xPos, 
             ySpawnCoordinate, this.transform.position.z);
         skewered = false;
+        maxYCoordinate = -ySpawnCoordinate;
     }
 
     #endregion
@@ -45,22 +48,31 @@ public class FoodController : MonoBehaviour
 
     void Update()
     {
-        if (!skewered)
+        if (!frozen)
         {
-            this.transform.position += Vector3.down * fallSpeed * Time.deltaTime;   
+            this.transform.position += Vector3.down * (fallSpeed * Time.deltaTime);   
         }
-        if (this.transform.position.y < -ySpawnCoordinate)
+        if (this.transform.position.y < maxYCoordinate)
         {
-            Destroy(this.gameObject);
+            if (!skewered)
+            {
+                Destroy(this.gameObject);  
+            }
+            else
+            {
+                Vector3 pos = this.transform.position;
+                this.transform.position = new Vector3(pos.x, maxYCoordinate, pos.z);
+                frozen = true;
+            }
         }
     }
 
     #endregion
 
-    // Spawn controller algorithms??
-    
-    // A A B D C C A B
-    
-    // A B A C B B B D A C C A B
+    public void UpdateMaxY(float newMax)
+    {
+        maxYCoordinate = newMax;
+        frozen = false;
+    }
     
 }
