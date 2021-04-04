@@ -42,9 +42,14 @@ public class GameManager : MonoBehaviour
 
     public void LoadToppingScene()
     {
-        SceneManager.LoadScene("ToppingsTest");
+        SceneManager.LoadScene("Toppings");
     }
-    
+
+    public void LoadSkewerPickScene()
+    {
+        SceneManager.LoadScene("Skewer Pick");
+    }
+
     public void Credits()
     {
         SceneManager.LoadScene("Credits");

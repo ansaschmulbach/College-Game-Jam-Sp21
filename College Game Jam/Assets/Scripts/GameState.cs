@@ -14,4 +14,6 @@ public class GameState
 
     // purple - 0, yellow - 1, pink -2
     public int currentCustomer = 0;
+
+    public Sprite skewerSprite;
 }

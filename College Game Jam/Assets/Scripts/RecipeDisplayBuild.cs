@@ -64,7 +64,7 @@ public class RecipeDisplayBuild : MonoBehaviour
 
         if (sceneTimer <= 0) 
         {
-            GameManager.Instance.GameScreen();
+            GameManager.Instance.LoadSkewerPickScene();
         }
     }
 
