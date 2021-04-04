@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     #region Scene_transitions
     public void StartGame()
     {
-        SceneManager.LoadScene("StartScene"); //very specific names! make sure they match in unity :D
+        SceneManager.LoadScene("Main Menu"); //very specific names! make sure they match in unity :D
     }
     public void CustomerEnter()
     {

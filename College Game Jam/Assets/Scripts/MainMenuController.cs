@@ -10,9 +10,9 @@ public class MainMenuController : MonoBehaviour
         GameManager.Instance.CustomerEnter();   
     }
 
-    public void LoadCredits()
+    public void GoBackToMain()
     {
-        
+        GameManager.Instance.StartGame();   
     }
     
 }

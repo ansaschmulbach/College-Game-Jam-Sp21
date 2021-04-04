@@ -16,6 +16,7 @@ public class RandomCustomer : MonoBehaviour
 
     private Image customer;
     private int random;
+    private int foodType;
     private Sprite cusSprite;
     private int customerColor = 0;
 
@@ -23,9 +24,11 @@ public class RandomCustomer : MonoBehaviour
     void Start()
     {
         random = Random.Range(0, customers.Count);
+        foodType = Random.Range(0, 3);
+        Debug.Log("Random customer script random food type: " + foodType);
+
         GameManager.Instance.gameState.currentCustomer = random;
         customer = GetComponent<Image>();
-        //random = Random.Range(0, customers.Count);
         cusSprite = customers[random];
         customer.sprite = cusSprite;
 
@@ -39,7 +42,6 @@ public class RandomCustomer : MonoBehaviour
         {
             this.GetComponent<RectTransform>().sizeDelta = new Vector2(192.4811f, 234.3617f);
             this.GetComponent<Animator>().runtimeAnimatorController = animations[1];
-            //this.transform.position = new Vector3(this.transform.position.x + 25, this.transform.position.y + 60, this.transform.position.z);
         }
 
         if (random == 2) // pinky
@@ -50,6 +52,7 @@ public class RandomCustomer : MonoBehaviour
         }
 
         GameManager.Instance.gameState.currentCustomer = random;
+        GameManager.Instance.gameState.food = foodType;
     }
 
     void Update()

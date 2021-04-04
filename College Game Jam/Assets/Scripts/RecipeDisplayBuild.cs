@@ -9,14 +9,26 @@ public class RecipeDisplayBuild : MonoBehaviour
     [SerializeField] [Tooltip("all fruit images")] 
     private List<GameObject> fruitImage;
 
+    [SerializeField] [Tooltip("all dango images")] 
+    private List<GameObject> dangoImage;
+
     [SerializeField] [Tooltip("time between each ingredient shown")] 
     private float fruitDelay;
 
     [SerializeField] [Tooltip("distance between fruits")] 
-    private float spacing;
+    private float fruitSpacing;
+
+    [SerializeField] [Tooltip("distance between dangos")] 
+    private float dangoSpacing;
 
     [SerializeField] [Tooltip("scene transition timer")] 
     private float sceneTimer;
+
+    [SerializeField] [Tooltip("how low you want to start at skewer")] 
+    private float height;
+
+    [SerializeField] [Tooltip("how low you want to start at skewer for dangos")] 
+    private float dangoHeight;
     
     #endregion
     
@@ -29,24 +41,31 @@ public class RecipeDisplayBuild : MonoBehaviour
 
     private float fruitSpawnTimer;
 
-    private float height;
-
     private float xCoord; 
 
     private float yCoord;
+
+    private int typeOfFood;
 
     #endregion
 
     // Start is called before the first frame update
     void Start()
     {
+        typeOfFood = GameManager.Instance.gameState.food;
         fruitIndex = 0;
         fruitSpawnTimer = 0;
-        height = -40f; // i love hardcoding mwahahah
-        xCoord = this.transform.position.x + 3; // u cannot stop me
-        yCoord = this.transform.position.y + height;
-        recipe = GameManager.Instance.gameState.recipe;
 
+        // for fruit
+        if (typeOfFood == 0) {
+            xCoord = this.transform.position.x + 3; // u cannot stop me
+            yCoord = this.transform.position.y + height;
+        } else { // for dango
+            xCoord = this.transform.position.x + 3; // u cannot stop me
+            yCoord = this.transform.position.y + dangoHeight;
+        }
+        
+        recipe = GameManager.Instance.gameState.recipe;
     }
 
     // Update is called once per frame
@@ -54,9 +73,15 @@ public class RecipeDisplayBuild : MonoBehaviour
     {
         fruitSpawnTimer -= Time.deltaTime;
         sceneTimer -= Time.deltaTime;
+
         if (fruitSpawnTimer <= 0)
         {
-            buildRecipe();
+            if (typeOfFood == 0) {
+                buildRecipe();
+            } else { // for dango
+                buildDangoRecipe();
+            }
+
             fruitSpawnTimer = fruitDelay;
         }
 
@@ -106,8 +131,46 @@ public class RecipeDisplayBuild : MonoBehaviour
             fruit.transform.parent = this.transform;
             fruit.transform.position = new Vector3(xCoord, yCoord, 0);
             fruitIndex++;
-            height = height + spacing;
+            height = height + fruitSpacing;
             yCoord = this.transform.position.y + height;
+            xCoord = this.transform.position.x + 3;
+        }
+    }
+
+    private void buildDangoRecipe() 
+    {
+        if (fruitIndex >= recipe.Count)
+        {
+            return;
+        }
+        else
+        {
+            GameObject dango = null;
+
+            if (recipe[fruitIndex].name == "Pink") 
+            {
+                dango = Instantiate(dangoImage[0]);
+                dango.GetComponent<RectTransform>().sizeDelta = new Vector2(37.94925f, 38.48184f); // LOL yes im hard coding values (^u^)b
+                //xCoord = this.transform.position.x + 5;
+            }
+
+            if (recipe[fruitIndex].name == "Green") 
+            {
+                dango = Instantiate(dangoImage[1]);
+                dango.GetComponent<RectTransform>().sizeDelta = new Vector2(36.28189f, 33.40438f);
+            }
+
+            if (recipe[fruitIndex].name == "White") 
+            {
+                dango = Instantiate(dangoImage[2]);
+                dango.GetComponent<RectTransform>().sizeDelta = new Vector2(37.28975f, 37.82246f);    
+            }
+
+            dango.transform.parent = this.transform;
+            dango.transform.position = new Vector3(xCoord, yCoord, 0);
+            fruitIndex++;
+            dangoHeight = dangoHeight + dangoSpacing;
+            yCoord = this.transform.position.y + dangoHeight;
             xCoord = this.transform.position.x + 3;
         }
     }

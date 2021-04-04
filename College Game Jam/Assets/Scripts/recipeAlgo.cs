@@ -26,13 +26,13 @@ public class recipeAlgo : MonoBehaviour
 
     void Awake()
     {
-        //typeOfFood = Random.Range(0, 2);
-        typeOfFood = 0;
+        typeOfFood = GameManager.Instance.gameState.food;
+        //Debug.Log("0 if fruit and 1 if dango" + typeOfFood);
         if (typeOfFood == 0)
         {
             buildFruitSequence();
         } else {
-            //buildDangoSequence();
+            buildDangoSequence();
         }
         
         GameManager.Instance.gameState.recipe = recipe;
@@ -92,4 +92,31 @@ public class recipeAlgo : MonoBehaviour
         }
     }
 
+    private void buildDangoSequence() {
+        GameObject curr = null; 
+
+        int sequenceLength = target + random;
+
+        for (int i = 0; i < (sequenceLength); i++)
+        {
+            int addTarget = Random.Range(0, target);
+            target = target - addTarget;
+            for (int j = 0; j < addTarget; j++)
+            {
+                int n = Random.Range(0, dango.Count);
+                curr = dango[n];
+                fullSequence.Add(curr);
+                recipe.Add(curr);
+            }
+
+            int addRandom = Random.Range(2, random);
+            random = random - addRandom;
+            for (int j = 0; j < addRandom; j++)
+            {
+                int n = Random.Range(0, dango.Count);
+                curr = dango[n];
+                fullSequence.Add(curr);
+            }
+        }
+    }
 }
