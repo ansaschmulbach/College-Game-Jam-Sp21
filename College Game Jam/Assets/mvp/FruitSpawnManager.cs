@@ -7,8 +7,8 @@ public class FruitSpawnManager : MonoBehaviour
 
     #region Inspector variables
 
-    [SerializeField] [Tooltip("Fruit will be spawned in this order")]
-    private List<GameObject> fruitPrototypes;
+    // [SerializeField] [Tooltip("Fruit will be spawned in this order")]
+    // private List<GameObject> fruitPrototypes;
 
     [SerializeField] [Tooltip("The amount of time between fruit spawns")]
     private float fruitSpawnDelay;
@@ -20,6 +20,7 @@ public class FruitSpawnManager : MonoBehaviour
     private int fruitIndex;
     private float fruitSpawnTimer;
     private GameObject skewer;
+    private List<GameObject> fruitPrototypes;
 
     #endregion
 
@@ -29,6 +30,7 @@ public class FruitSpawnManager : MonoBehaviour
     {
         fruitSpawnTimer = fruitSpawnDelay/2;
         skewer = GameObject.FindGameObjectWithTag("Skewer");
+        fruitPrototypes = GameManager.Instance.gameState.fullSequence;
     }
 
     void Update()

@@ -48,7 +48,6 @@ public class recipeAlgo : MonoBehaviour
         {
             Debug.Log(j.name);
         }
-
     }
 
     private void Update()

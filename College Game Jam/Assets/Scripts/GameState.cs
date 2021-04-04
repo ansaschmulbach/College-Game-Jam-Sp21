@@ -10,5 +10,4 @@ public class GameState
 
     // UI Image game object of the recipe player needs to make
     public GameObject recipeImage = null;
-
 }
