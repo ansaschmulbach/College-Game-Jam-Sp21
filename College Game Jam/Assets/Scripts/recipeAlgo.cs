@@ -6,15 +6,12 @@ using Random = UnityEngine.Random;
 
 public class recipeAlgo : MonoBehaviour
 {
-    // private enum dangoColor {green, pink, white}
-    // private enum fruits {strawberry, banana, kiwi, tangerine}
-
     #region Inspector Variables
 
     [SerializeField] [Tooltip("how long the recipe is")] private int target = 6;
     [SerializeField] [Tooltip("how many random fruits there are")] private int random = 12;
     [SerializeField] [Tooltip("all fruit prototypes")] private List<GameObject> fruits;
-    [SerializeField] [Tooltip("all fruit prototypes")] private List<GameObject> dango;
+    [SerializeField] [Tooltip("all dango prototypes")] private List<GameObject> dango;
     
     #endregion
 
@@ -23,12 +20,20 @@ public class recipeAlgo : MonoBehaviour
 
     private List<GameObject> fullSequence = new List<GameObject>();
     private List<GameObject> recipe = new List<GameObject>();
+    private int typeOfFood;
 
     #endregion
 
     void Awake()
     {
-        buildFruitSequence();
+        typeOfFood = Random.Range(0, 2);
+        if (typeOfFood == 0)
+        {
+            buildFruitSequence();
+        } else {
+            buildDangoSequence();
+        }
+        
         GameManager.Instance.gameState.recipe = recipe;
         GameManager.Instance.gameState.fullSequence = fullSequence;
     }

@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadToppingScene()
     {
-        SceneManager.LoadScene("Toppings");
+        SceneManager.LoadScene("ToppingsTest");
     }
     
     public void Credits()
