@@ -318,7 +318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 513, y: 141.24}
+  m_AnchoredPosition: {x: 429, y: 118.24}
   m_SizeDelta: {x: 88.37648, y: 67.517075}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &343384733
@@ -448,7 +448,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 170, y: 156}
+  m_AnchoredPosition: {x: 132, y: 118.24}
   m_SizeDelta: {x: 88.37648, y: 67.517075}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &369506156
@@ -917,7 +917,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 21, y: 141.24}
+  m_AnchoredPosition: {x: 16, y: 98}
   m_SizeDelta: {x: 88.37648, y: 67.517075}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1480296103
@@ -1236,20 +1236,20 @@ MonoBehaviour:
   marshmallows:
   - {fileID: 9085007303591654028, guid: 0f5b14d8deb4440b799312e0a21ef232, type: 3}
   - {fileID: 1274180959373139080, guid: 33488847722c74661b4e5ef50d74e9ef, type: 3}
-  - {fileID: 4734632171305256929, guid: 05f59c909ef6346f4aee0feebc7039bb, type: 3}
-  - {fileID: 8762434918901738333, guid: 27e565f8d29b142d39e968acdaa4de70, type: 3}
-  - {fileID: 2426147010682268112, guid: a0e9151224e354bb795e6de3f6f047ab, type: 3}
-  - {fileID: 360322078866789930, guid: 6174042b0a05f43c6916a4d5cd2e43a2, type: 3}
-  - {fileID: 3663609807139806928, guid: f52d17a609dec4d41b2e0dd6f11e555c, type: 3}
+  - {fileID: 9085007303591654028, guid: 0f5b14d8deb4440b799312e0a21ef232, type: 3}
+  - {fileID: 1274180959373139080, guid: 33488847722c74661b4e5ef50d74e9ef, type: 3}
+  - {fileID: 9085007303591654028, guid: 0f5b14d8deb4440b799312e0a21ef232, type: 3}
+  - {fileID: 1274180959373139080, guid: 33488847722c74661b4e5ef50d74e9ef, type: 3}
+  - {fileID: 9085007303591654028, guid: 0f5b14d8deb4440b799312e0a21ef232, type: 3}
   sprinkles:
   - {fileID: 4282706826447233579, guid: 43ecb20508fed4595841b7756134b055, type: 3}
   - {fileID: 7010791094045931834, guid: 4b873f5e07aa64c57a0387a13466e197, type: 3}
-  - {fileID: 9019493477040320848, guid: 93dfd1d19c352430d9fc744f6ca8cb7d, type: 3}
-  - {fileID: 2463107917121526411, guid: 7686422dba68f40108920900fa48b0b6, type: 3}
-  - {fileID: 6141923590727375092, guid: 555f24aa8a1d24ee2bdb2a69ea60c47e, type: 3}
-  - {fileID: 3699148100756200905, guid: f2786a1c1e4a54e1a87f2dca586c6627, type: 3}
-  - {fileID: 1727275578771369843, guid: cdbe476beec924591a6e8e383ead5c2d, type: 3}
-  spawnPos: {x: -0.25, y: 0.5, z: -2}
+  - {fileID: 4282706826447233579, guid: 43ecb20508fed4595841b7756134b055, type: 3}
+  - {fileID: 7010791094045931834, guid: 4b873f5e07aa64c57a0387a13466e197, type: 3}
+  - {fileID: 4282706826447233579, guid: 43ecb20508fed4595841b7756134b055, type: 3}
+  - {fileID: 7010791094045931834, guid: 4b873f5e07aa64c57a0387a13466e197, type: 3}
+  - {fileID: 4282706826447233579, guid: 43ecb20508fed4595841b7756134b055, type: 3}
+  spawnPos: {x: -0.25, y: 1.3, z: -2}
 --- !u!1 &1989412892
 GameObject:
   m_ObjectHideFlags: 0

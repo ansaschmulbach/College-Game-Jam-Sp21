@@ -124,12 +124,14 @@ public class FoodController : MonoBehaviour
     {
         hasSprinkles = !hasSprinkles;
         this.sprinkles.GetComponent<SpriteRenderer>().enabled = hasSprinkles;
+        this.sprinkles.GetComponent<Animator>().SetTrigger("Switched");
     }
     
     public void ToggleMarshmallows()
     {
         hasMarshmallows = !hasMarshmallows;
         this.marshmallows.GetComponent<SpriteRenderer>().enabled = hasMarshmallows;
+        this.marshmallows.GetComponent<Animator>().SetTrigger("Switched");
     }
 
     #endregion
