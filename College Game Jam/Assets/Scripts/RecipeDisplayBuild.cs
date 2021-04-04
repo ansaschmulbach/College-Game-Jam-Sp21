@@ -14,6 +14,9 @@ public class RecipeDisplayBuild : MonoBehaviour
 
     [SerializeField] [Tooltip("distance between fruits")] 
     private float spacing;
+
+    [SerializeField] [Tooltip("scene transition timer")] 
+    private float sceneTimer;
     
     #endregion
     
@@ -50,6 +53,7 @@ public class RecipeDisplayBuild : MonoBehaviour
     void Update()
     {
         fruitSpawnTimer -= Time.deltaTime;
+        sceneTimer -= Time.deltaTime;
         if (fruitSpawnTimer <= 0)
         {
             buildRecipe();
@@ -57,6 +61,11 @@ public class RecipeDisplayBuild : MonoBehaviour
         }
 
         GameManager.Instance.gameState.recipeImage = this.gameObject;
+
+        if (sceneTimer <= 0) 
+        {
+            GameManager.Instance.GameScreen();
+        }
     }
 
     private void buildRecipe() 

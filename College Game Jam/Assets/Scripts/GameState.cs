@@ -11,4 +11,7 @@ public class GameState
 
     // UI Image game object of the recipe player needs to make
     public GameObject recipeImage = null;
+
+    // purple - 0, yellow - 1, pink -2
+    public int currentCustomer = 0;
 }

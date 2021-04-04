@@ -27,12 +27,14 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("StartScene"); //very specific names! make sure they match in unity :D
     }
-
-    public void LoadRecipeScene()
+    public void CustomerEnter()
     {
-        SceneManager.LoadScene("Recipe");
+        SceneManager.LoadScene("CustomerEntrance"); 
     }
-    
+    public void Recipe()
+    {
+        SceneManager.LoadScene("Recipe"); //very specific names! make sure they match in unity :D
+    }
     public void GameScreen()
     {
         SceneManager.LoadScene("AssemblyScene");
