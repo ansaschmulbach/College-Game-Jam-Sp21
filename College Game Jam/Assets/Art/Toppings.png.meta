@@ -1,0 +1,569 @@
+fileFormatVersion: 2
+guid: 1b7596320092744db8bb7f95ee9b886c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9071189453855236408
+    second: Toppings_0
+  - first:
+      213: 5253912547787464768
+    second: Toppings_1
+  - first:
+      213: -2402214067038527898
+    second: Toppings_2
+  - first:
+      213: 7177810129534350206
+    second: Toppings_3
+  - first:
+      213: 5803531116137737349
+    second: Toppings_4
+  - first:
+      213: 1075616439055367838
+    second: Toppings_5
+  - first:
+      213: 1228662862109624515
+    second: Toppings_6
+  - first:
+      213: -5911882406725134909
+    second: half marshmallows 1
+  - first:
+      213: 4984768152876275503
+    second: Toppings_8
+  - first:
+      213: 2249011565199416168
+    second: Toppings_9
+  - first:
+      213: 3069493985201028532
+    second: Toppings_10
+  - first:
+      213: -1321748647720402329
+    second: Toppings_11
+  - first:
+      213: 5706835450573134865
+    second: Toppings_12
+  - first:
+      213: -6700208998144849985
+    second: half marshmallows 2
+  - first:
+      213: -8421353358338746594
+    second: half sprinkles 2
+  - first:
+      213: 4796266942328682239
+    second: Toppings_15
+  - first:
+      213: -8454273352927474836
+    second: half sprinkles 1
+  - first:
+      213: -625773607386272743
+    second: Toppings_17
+  - first:
+      213: -1871795626636331027
+    second: Toppings_18
+  - first:
+      213: 1465425642868518564
+    second: Toppings_19
+  - first:
+      213: -3795225975266449094
+    second: Toppings_20
+  - first:
+      213: -4057517951616229821
+    second: Toppings_21
+  - first:
+      213: 1372309449201708810
+    second: Toppings_22
+  - first:
+      213: 1696004608091907004
+    second: Toppings_23
+  - first:
+      213: 2826908152832600567
+    second: Toppings_24
+  - first:
+      213: 1291378778607272951
+    second: Toppings_25
+  - first:
+      213: 4398634051973781235
+    second: Toppings_26
+  - first:
+      213: 258437652491716308
+    second: Toppings_27
+  - first:
+      213: -6152266148103655907
+    second: Toppings_28
+  - first:
+      213: -4307436374663653301
+    second: Toppings_29
+  - first:
+      213: -3442538109192816803
+    second: Toppings_30
+  - first:
+      213: -3790871814592040303
+    second: Toppings_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Toppings_0
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 818
+        width: 241
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce50b0c049ac1280800000000000000
+      internalID: -9071189453855236408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toppings_1
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 875
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040e6d330a5a9e840800000000000000
+      internalID: 5253912547787464768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toppings_2
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 494
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ed8b3980f99aed0800000000000000
+      internalID: -2402214067038527898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toppings_3
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 749
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73781c7844bc9360800000000000000
+      internalID: 7177810129534350206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toppings_4
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 540
+        width: 263
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ce05c3dc84a8050800000000000000
+      internalID: 5803531116137737349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toppings_5
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 823
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e3774d37b5dee00800000000000000
+      internalID: 1075616439055367838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toppings_6
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 670
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c842c40d561d0110800000000000000
+      internalID: 1228662862109624515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: half marshmallows 1
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 380
+        width: 159
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c554490646c4fda0800000000000000
+      internalID: -5911882406725134909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toppings_8
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 321
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27dedf79347d2540800000000000000
+      internalID: 4984768152876275503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toppings_9
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 259
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bd47f4a18163f10800000000000000
+      internalID: 2249011565199416168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toppings_10
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 312
+        width: 192
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdfa144488099a20800000000000000
+      internalID: 3069493985201028532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toppings_11
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 495
+        width: 250
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762c54a9b9438ade0800000000000000
+      internalID: -1321748647720402329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toppings_12
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 436
+        width: 61
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c940f2b90c23f40800000000000000
+      internalID: 5706835450573134865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: half marshmallows 2
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 359
+        width: 138
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb743b85a631403a0800000000000000
+      internalID: -6700208998144849985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: half sprinkles 2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 558
+        width: 139
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e171d242db7512b80800000000000000
+      internalID: -8421353358338746594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toppings_15
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 520
+        width: 281
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff633715f53cf8240800000000000000
+      internalID: 4796266942328682239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: half sprinkles 1
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 548
+        width: 187
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b05bc9d236caa80800000000000000
+      internalID: -8454273352927474836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

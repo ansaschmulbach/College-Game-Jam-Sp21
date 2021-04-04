@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class SkewerController : MonoBehaviour
@@ -9,7 +10,10 @@ public class SkewerController : MonoBehaviour
     #region Inspector Variables
 
     [SerializeField] [Tooltip("The max number of skewered items to be displayed on the screen.")]
-    private int maxSkewered;
+    private int maxSkeweredDisplay;
+
+    [SerializeField] [Tooltip("The max number of skewered items before loading next scene.")]
+    public int maxSkewered;
 
     [SerializeField] [Tooltip("The y value to display the top skewered item at.")]
     private float topItemY;
@@ -18,7 +22,8 @@ public class SkewerController : MonoBehaviour
 
     #region Private Variables
 
-    private List<GameObject> skeweredItems;
+    [Header("Do not edit")]
+    public List<GameObject> skeweredItems;
 
     #endregion
 
@@ -67,7 +72,7 @@ public class SkewerController : MonoBehaviour
 
     void UpdateScreen()
     {
-        int i = maxSkewered - 1;
+        int i = maxSkeweredDisplay - 1;
         int j = skeweredItems.Count - 1;
         if (i >= j)
         {
@@ -92,5 +97,12 @@ public class SkewerController : MonoBehaviour
 
     #endregion
 
-
+    public void SaveAsPrefab()
+    {
+        GameObject fullSkewerPrefab = PrefabUtility.SaveAsPrefabAsset(this.gameObject, "Assets/FullSkewer.prefab");
+        fullSkewerPrefab.GetComponent<FollowMouse>().enabled = false;
+        fullSkewerPrefab.GetComponent<SkewerController>().enabled = false;
+        fullSkewerPrefab.AddComponent<CompletedSkewerController>();
+    }
+    
 }
