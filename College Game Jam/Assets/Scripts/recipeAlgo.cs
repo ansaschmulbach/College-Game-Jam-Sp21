@@ -26,10 +26,15 @@ public class recipeAlgo : MonoBehaviour
 
     #endregion
 
+    void Awake()
+    {
+        buildFruitSequence();
+        GameManager.Instance.gameState.recipe = recipe;
+        GameManager.Instance.gameState.fullSequence = fullSequence;
+    }
 
     void Start()
     {
-        buildFruitSequence();
 
         Debug.Log("Actual Recipe Length: ");
         Debug.Log(recipe.Count);
@@ -43,10 +48,6 @@ public class recipeAlgo : MonoBehaviour
         {
             Debug.Log(j.name);
         }
-
-        GameManager.Instance.gameState.recipe = recipe;
-        GameManager.Instance.gameState.fullSequence = fullSequence;
-
     }
 
     private void Update()
