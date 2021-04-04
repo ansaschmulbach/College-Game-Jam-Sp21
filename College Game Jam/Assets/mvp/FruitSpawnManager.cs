@@ -21,6 +21,7 @@ public class FruitSpawnManager : MonoBehaviour
     private float fruitSpawnTimer;
     private GameObject skewer;
     private List<GameObject> fruitPrototypes;
+    private SkewerController skewerScript;
 
     #endregion
 
@@ -31,6 +32,7 @@ public class FruitSpawnManager : MonoBehaviour
         fruitSpawnTimer = fruitSpawnDelay/2;
         skewer = GameObject.FindGameObjectWithTag("Skewer");
         fruitPrototypes = GameManager.Instance.gameState.fullSequence;
+        skewerScript = skewer.GetComponent<SkewerController>();
     }
 
     void Update()
@@ -49,9 +51,9 @@ public class FruitSpawnManager : MonoBehaviour
 
     void SpawnFruit()
     {
-        if (fruitIndex == fruitPrototypes.Count)
+        if (fruitIndex == fruitPrototypes.Count || skewerScript.skeweredItems.Count == skewerScript.maxSkewered)
         {
-            return;
+            Finish();
         }
         else
         {
@@ -62,5 +64,11 @@ public class FruitSpawnManager : MonoBehaviour
     }
 
     #endregion
+
+    void Finish()
+    {
+        skewer.GetComponent<SkewerController>().SaveAsPrefab();
+        GameManager.Instance.LoadToppingScene();
+    }
 
 }
