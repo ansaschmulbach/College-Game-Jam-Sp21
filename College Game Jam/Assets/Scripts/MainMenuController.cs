@@ -7,7 +7,7 @@ public class MainMenuController : MonoBehaviour
 
     public void StartGame()
     {
-        
+        GameManager.Instance.CustomerEnter();   
     }
 
     public void LoadCredits()

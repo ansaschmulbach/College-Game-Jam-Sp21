@@ -26,12 +26,13 @@ public class recipeAlgo : MonoBehaviour
 
     void Awake()
     {
-        typeOfFood = Random.Range(0, 2);
+        //typeOfFood = Random.Range(0, 2);
+        typeOfFood = 0;
         if (typeOfFood == 0)
         {
             buildFruitSequence();
         } else {
-            buildDangoSequence();
+            //buildDangoSequence();
         }
         
         GameManager.Instance.gameState.recipe = recipe;

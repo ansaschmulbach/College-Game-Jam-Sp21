@@ -32,15 +32,7 @@ public class SkewerController : MonoBehaviour
     void Start()
     {
         skeweredItems = new List<GameObject>();
-    }
-
-    void Update()
-    {
-        // foreach (GameObject g in skeweredItems)
-        // {
-        //     g.transform.position += new Vector3(0, -1, 0);
-        //
-        // }
+        GetComponent<SpriteRenderer>().sprite = GameManager.Instance.gameState.skewerSprite;
     }
 
     private void OnCollisionEnter2D(Collision2D other)
