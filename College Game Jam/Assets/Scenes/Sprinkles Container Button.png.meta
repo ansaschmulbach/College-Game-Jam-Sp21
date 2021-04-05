@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 893175a45966d4be98ce3774e6660098
+guid: a68be72f2bc924b14b25b28fc3896e4d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2133657282214759049
-    second: Skewers_0
-  - first:
-      213: -6368962488649957136
-    second: Skewers_1
-  - first:
-      213: 5859100643483063095
-    second: Skewers_2
+      213: -800909212824202266
+    second: Sprinkles Container Button_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -108,64 +102,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skewers_0
+      name: Sprinkles Container Button_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 737
-        width: 1756
-        height: 21
+        x: 387
+        y: 505
+        width: 513
+        height: 179
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 775f925a10ab362e0800000000000000
-      internalID: -2133657282214759049
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skewers_1
-      rect:
-        serializedVersion: 2
-        x: 51
-        y: 520
-        width: 1757
-        height: 72
-      alignment: 9
-      pivot: {x: 0.49902472, y: 0.23821174}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0f04b3c5c56ec97a0800000000000000
-      internalID: -6368962488649957136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Skewers_2
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 288
-        width: 1756
-        height: 95
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 733121e0ef4bf4150800000000000000
-      internalID: 5859100643483063095
+      spriteID: 6e39648705992e4f0800000000000000
+      internalID: -800909212824202266
       vertices: []
       indices: 
       edges: []
