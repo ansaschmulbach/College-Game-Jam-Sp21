@@ -92,8 +92,6 @@ public class SkewerController : MonoBehaviour
     {
         GameObject fullSkewerPrefab = PrefabUtility.SaveAsPrefabAsset(this.gameObject, "Assets/FullSkewer.prefab");
         fullSkewerPrefab.GetComponent<FollowMouse>().enabled = false;
-        fullSkewerPrefab.GetComponent<SkewerController>().enabled = false;
-        fullSkewerPrefab.AddComponent<CompletedSkewerController>();
     }
     
 }

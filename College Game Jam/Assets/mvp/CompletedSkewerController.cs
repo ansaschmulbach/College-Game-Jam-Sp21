@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class CompletedSkewerController : MonoBehaviour
@@ -10,8 +11,10 @@ public class CompletedSkewerController : MonoBehaviour
         GameObject toppingsHolder = GameObject.FindWithTag("Toppings");
         toppingsHolder.transform.parent = this.transform;
     }
-    void Update()
+    public void SaveAsPrefab()
     {
-        
+        GameObject fullSkewerPrefab = PrefabUtility.SaveAsPrefabAsset(this.gameObject, "Assets/FullSkewer.prefab");
+        fullSkewerPrefab.GetComponent<CompletedSkewerController>().enabled = false;
     }
+    
 }
