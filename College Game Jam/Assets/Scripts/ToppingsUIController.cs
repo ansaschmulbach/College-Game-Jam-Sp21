@@ -66,6 +66,12 @@ public class ToppingsUIController : MonoBehaviour
         }
     }
 
+    public void TransitionToEnd()
+    {
+        skewer.GetComponent<SkewerController>().SaveAsPrefab();
+        GameManager.Instance.EndScene();
+    }
+
     #endregion
 
 }

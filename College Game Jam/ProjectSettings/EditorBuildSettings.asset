@@ -26,9 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 677d5048e543242958d352cbbc4e1a71
-    path: Assets/Scenes/Skewer Pick.unity
-    guid: 7454bce65d1894e098efff74c577870f
   - enabled: 1
     path: Assets/Scenes/CustomerEntrance.unity
     guid: 91e5d9f12115d4df4b77d647a104ce99
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 23f11e052b71b4772bedb89ed76171ea
   m_configObjects: {}
