@@ -608,8 +608,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 280.2, y: 64.58}
-  m_SizeDelta: {x: 5426.921, y: 12.756845}
+  m_AnchoredPosition: {x: 278, y: 61}
+  m_SizeDelta: {x: 5315.5967, y: 19.383606}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &784157443
 MonoBehaviour:
@@ -662,13 +662,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruitImage:
-  - {fileID: 8678519492988526150, guid: 6b7793a8aaea94526b2a20f7a26ca19b, type: 3}
-  - {fileID: 8058387412815033373, guid: 5cb6a252366db4202952651eb4b72cc2, type: 3}
-  - {fileID: 4196113476960693232, guid: e804d33be73834867bce33dbe0a2764b, type: 3}
-  - {fileID: 925681104321657975, guid: 02f2a8badf11540558550bf1db448757, type: 3}
+  - {fileID: 8412652225817851849, guid: c58c413bf89284a4da6098d7f5b1d242, type: 3}
+  - {fileID: 4996267068524042467, guid: 00e52d840eeab404cac617ba2d2795e8, type: 3}
+  - {fileID: 4646861361770987063, guid: 423831b0363f54d28b52463c1d90c478, type: 3}
+  - {fileID: 6992082540672646988, guid: c000b15f3c5e747b3ad029fb8e535ce0, type: 3}
   dangoImage:
-  - {fileID: 7181582790609402928, guid: 486f9beacade44d66892852116a642df, type: 3}
-  - {fileID: 1857282880399426093, guid: f5335c613737a486999e87f3a34e4495, type: 3}
+  - {fileID: 4887619909185186581, guid: 6b682e2bda27647c997d01baa30a6331, type: 3}
+  - {fileID: 6182864795100140589, guid: 278d3824d2cc74ac58360d9204cb3367, type: 3}
   - {fileID: 8838313846162821612, guid: ffa290f9e61304a778a1c1805ff9ec3b, type: 3}
   fruitDelay: 1
   fruitSpacing: 28

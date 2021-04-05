@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5289066561762045550}
   - component: {fileID: 6721434336402424128}
   m_Layer: 5
-  m_Name: Image
+  m_Name: kiwiImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

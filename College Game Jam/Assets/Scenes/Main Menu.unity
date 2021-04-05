@@ -317,7 +317,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1863804324}
+      - m_Target: {fileID: 355002825}
         m_MethodName: Credits
         m_Mode: 1
         m_Arguments:

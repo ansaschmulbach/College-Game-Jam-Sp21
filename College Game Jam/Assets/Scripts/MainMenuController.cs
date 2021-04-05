@@ -14,5 +14,10 @@ public class MainMenuController : MonoBehaviour
     {
         GameManager.Instance.StartGame();   
     }
+
+    public void Credits()
+    {
+        GameManager.Instance.Credits();   
+    }
     
 }
