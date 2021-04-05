@@ -30,6 +30,11 @@ EditorBuildSettings:
     path: Assets/Scenes/CustomerEntrance.unity
     guid: 91e5d9f12115d4df4b77d647a104ce99
   - enabled: 1
+<<<<<<< Updated upstream
     path: Assets/Scenes/End.unity
     guid: 23f11e052b71b4772bedb89ed76171ea
+=======
+    path: Assets/Scenes/Message.unity
+    guid: 245453e0c9a484be0aae5c52121fe2e1
+>>>>>>> Stashed changes
   m_configObjects: {}

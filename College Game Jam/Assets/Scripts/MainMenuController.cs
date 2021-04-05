@@ -19,5 +19,10 @@ public class MainMenuController : MonoBehaviour
     {
         GameManager.Instance.Credits();   
     }
+
+    public void Message()
+    {
+        GameManager.Instance.MessageScene();   
+    }
     
 }

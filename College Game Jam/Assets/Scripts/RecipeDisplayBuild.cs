@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RecipeDisplayBuild : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class RecipeDisplayBuild : MonoBehaviour
 
     [SerializeField] [Tooltip("how low you want to start at skewer for dangos")] // -50
     private float dangoHeight;
-    
+
     #endregion
     
 
@@ -80,6 +81,7 @@ public class RecipeDisplayBuild : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         fruitSpawnTimer -= Time.deltaTime;
         sceneTimer -= Time.deltaTime;
 

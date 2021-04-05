@@ -27,6 +27,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Main Menu"); //very specific names! make sure they match in unity :D
     }
+    public void MessageScene()
+    {
+        SceneManager.LoadScene("Message"); 
+    }
     public void CustomerEnter()
     {
         SceneManager.LoadScene("CustomerEntrance"); 
