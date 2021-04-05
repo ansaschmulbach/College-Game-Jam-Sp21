@@ -57,8 +57,7 @@ public class SkewerController : MonoBehaviour
         Vector3 pos = fruit.transform.position;
         fruit.GetComponent<Collider2D>().enabled = false;
         fruit.GetComponent<FoodController>().skewered = true;
-        fruit.transform.position = new Vector3(this.transform.position.x, pos.y, pos.z);
-        fruit.transform.rotation = Quaternion.identity;
+        fruit.transform.position = new Vector3(this.transform.position.x, pos.y, transform.position.z - skeweredItems.Count);
         UpdateScreen();
     }
 

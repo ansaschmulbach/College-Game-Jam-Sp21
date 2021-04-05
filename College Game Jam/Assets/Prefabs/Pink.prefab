@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 7895851657121106599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 18.4, y: 18.6, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -97,7 +97,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03479767, y: 0.0045309067}
+  m_Offset: {x: -0.03479767, y: 0.15181422}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -108,7 +108,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7197142, y: 3}
+  m_Size: {x: 3, y: 3.2945666}
   m_EdgeRadius: 0
 --- !u!114 &7895851657121106618
 MonoBehaviour:
@@ -125,7 +125,7 @@ MonoBehaviour:
   ySpawnCoordinate: 20
   xMax: 18
   fallSpeed: 20
-  condensedMilkSprite: {fileID: -4995486510202158683, guid: 459f5ba975b274275b3ed9551a2d40ea,
+  condensedMilkSprite: {fileID: 1551746224341484436, guid: e49eda9941eb0406289126dda65d509e,
     type: 3}
   frozen: 0
   skewered: 0
