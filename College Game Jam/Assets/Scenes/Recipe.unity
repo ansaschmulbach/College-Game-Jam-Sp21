@@ -608,7 +608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 278, y: 61}
+  m_AnchoredPosition: {x: 276, y: 61}
   m_SizeDelta: {x: 5315.5967, y: 19.383606}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &784157443
@@ -674,7 +674,7 @@ MonoBehaviour:
   fruitSpacing: 28
   dangoSpacing: 30
   sceneTimer: 10
-  height: -40
+  height: -45
   dangoHeight: -50
 --- !u!1 &1073455060
 GameObject:
