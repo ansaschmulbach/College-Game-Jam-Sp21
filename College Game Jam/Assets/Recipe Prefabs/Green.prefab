@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5017782310960470890}
   - component: {fileID: 5314154486552635731}
   m_Layer: 5
-  m_Name: greenImage 1
+  m_Name: Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,8 +32,8 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 283.9, y: 32}
   m_SizeDelta: {x: -759.55334, y: -412.76117}
   m_Pivot: {x: 0.5, y: 0.5}

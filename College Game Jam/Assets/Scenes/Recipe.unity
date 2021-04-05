@@ -667,8 +667,8 @@ MonoBehaviour:
   - {fileID: 4646861361770987063, guid: 423831b0363f54d28b52463c1d90c478, type: 3}
   - {fileID: 6992082540672646988, guid: c000b15f3c5e747b3ad029fb8e535ce0, type: 3}
   dangoImage:
-  - {fileID: 4887619909185186581, guid: 6b682e2bda27647c997d01baa30a6331, type: 3}
-  - {fileID: 6182864795100140589, guid: 278d3824d2cc74ac58360d9204cb3367, type: 3}
+  - {fileID: 7181582790609402928, guid: 486f9beacade44d66892852116a642df, type: 3}
+  - {fileID: 2503848839217248762, guid: c4cc54974d8ad47158879cff18eb2766, type: 3}
   - {fileID: 8838313846162821612, guid: ffa290f9e61304a778a1c1805ff9ec3b, type: 3}
   fruitDelay: 1
   fruitSpacing: 28

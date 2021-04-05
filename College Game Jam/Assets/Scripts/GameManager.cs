@@ -50,6 +50,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Skewer Pick");
     }
 
+    public void EndScene()
+    {
+        SceneManager.LoadScene("End");
+    }
+
     public void Credits()
     {
         SceneManager.LoadScene("Credits");

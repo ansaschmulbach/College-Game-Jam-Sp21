@@ -17,5 +17,5 @@ public class GameState
 
     public Sprite skewerSprite;
     // fruit - 0, dango - 1
-    public int food = 0;
+    public int food = 1;
 }

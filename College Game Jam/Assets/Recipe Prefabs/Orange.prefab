@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2535492199475692473}
   - component: {fileID: 6808622559590071991}
   m_Layer: 5
-  m_Name: oraImage 1
+  m_Name: Orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,8 +32,8 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 283.72, y: 153.9}
   m_SizeDelta: {x: -737.44543, y: -413.40347}
   m_Pivot: {x: 0.5, y: 0.5}

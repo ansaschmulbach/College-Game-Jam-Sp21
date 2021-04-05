@@ -24,8 +24,8 @@ public class RandomCustomer : MonoBehaviour
     void Start()
     {
         random = Random.Range(0, customers.Count);
-        foodType = Random.Range(0, 3);
-        Debug.Log("Random customer script random food type: " + foodType);
+        foodType = Random.Range(0, 2);
+        Debug.Log(foodType);
 
         GameManager.Instance.gameState.currentCustomer = random;
         customer = GetComponent<Image>();

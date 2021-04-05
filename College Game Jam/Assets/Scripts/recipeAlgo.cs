@@ -27,7 +27,8 @@ public class recipeAlgo : MonoBehaviour
     void Awake()
     {
         typeOfFood = GameManager.Instance.gameState.food;
-        //Debug.Log("0 if fruit and 1 if dango" + typeOfFood);
+        
+
         if (typeOfFood == 0)
         {
             buildFruitSequence();
