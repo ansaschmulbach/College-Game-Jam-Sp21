@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor.Animations;
 
 
 public class RandomCustomer : MonoBehaviour
@@ -10,7 +9,7 @@ public class RandomCustomer : MonoBehaviour
     [SerializeField] [Tooltip("sprites of all customer characters")] 
     private List<Sprite> customers = new List<Sprite>();
     [SerializeField] [Tooltip("animation for all customers")] 
-    private List<AnimatorController> animations = new List<AnimatorController>();
+    private List<RuntimeAnimatorController> animations = new List<RuntimeAnimatorController>();
     [SerializeField] [Tooltip("scene transition timer")] 
     private float sceneTimer;
 

@@ -13,6 +13,9 @@ public class EndUIController : MonoBehaviour
     void Start()
     {
         skewer = GameObject.FindWithTag("Skewer").GetComponent<SkewerController>();
+        LoadSkewerObject(SaveSystem.LoadSkewer(), skewer);
+        
+        
         Debug.Log(Score());
         // for (int i = 0; i < Score(); i++)
         // {
@@ -25,11 +28,41 @@ public class EndUIController : MonoBehaviour
         // }
     }
 
+    public static void LoadSkewerObject(SkewerSaveData saveData, SkewerController skewer)
+    {
+        for (int i = 0; i < saveData.dangos.Length; i++)
+        {
+            SkewerSaveData.DangoSaveData dango = saveData.dangos[i];
+            GameObject dangoGO = FoodController.LoadDango(dango, skewer);
+            if (dango.marshmallows.enabled)
+            {
+                Instantiate(ToppingsUIController._marshmallows[i], 
+                    ToppingsUIController._spawnPos + dangoGO.transform.position, 
+                            Quaternion.identity, dangoGO.transform); 
+            }
+
+            if (dango.sprinkles.enabled)
+            {
+                Instantiate(ToppingsUIController._sprinkles[i], 
+                    ToppingsUIController._spawnPos + dangoGO.transform.position, 
+                            Quaternion.identity, dangoGO.transform);
+
+            }
+
+            if (dango.condensed)
+            {
+                dangoGO.GetComponent<SpriteRenderer>().sprite =
+                    dangoGO.GetComponent<FoodController>().condensedMilkSprite;
+            }
+
+        }
+    }
+    
     int Score()
     {
         List<GameObject> fruit = skewer.skeweredItems;
         List<GameObject> recipe = GameManager.Instance.gameState.recipe;
-        Debug.Log(recipe);
+//        Debug.Log(recipe);
         bool containsAll = true;
         int stars = 3;
         
@@ -38,7 +71,7 @@ public class EndUIController : MonoBehaviour
             if (!hasName(fruit, go.name))
             {
                 containsAll = false;
-                Debug.Log(go.name);
+                //Debug.Log(go.name);
             }
         }
 
@@ -66,7 +99,7 @@ public class EndUIController : MonoBehaviour
         }
         else
         {
-            Debug.Log("has no extra");
+            //Debug.Log("has no extra");
         }
 
         bool isPerfect = fruit.Count == recipe.Count;
@@ -76,7 +109,7 @@ public class EndUIController : MonoBehaviour
             if (!(fruit[i].name).Equals(recipe[i].name) && !(fruit[i].name + "(Clone)").Equals(recipe[i].name))
             {
                 isPerfect = false;
-                Debug.Log(fruit[i].name + ", " + recipe[i].name);
+//                Debug.Log(fruit[i].name + ", " + recipe[i].name);
             }
             
             // if (!fruit[i].Equals(recipe[i]))
@@ -91,7 +124,7 @@ public class EndUIController : MonoBehaviour
         }
         else
         {
-            Debug.Log("is perfect");
+//            Debug.Log("is perfect");
         }
         
         return stars;

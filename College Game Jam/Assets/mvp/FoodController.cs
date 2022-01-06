@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
-using UnityEditor.U2D;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Quaternion = UnityEngine.Quaternion;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -22,19 +22,14 @@ public class FoodController : MonoBehaviour
     private float fallSpeed;
 
     [SerializeField] [Tooltip("The condensed milk sprite of this fruit")]
-    private Sprite condensedMilkSprite;
+    public Sprite condensedMilkSprite;
     
     #endregion
 
     #region Private Variables
 
-    [SerializeField] private bool frozen = false;
+    [SerializeField] public bool frozen = false;
     private Sprite defaultFruitSprite;
-
-    //toppings variables
-    private bool isCondensed;
-    private bool hasSprinkles;
-    private bool hasMarshmallows;
     
     #endregion
 
@@ -48,6 +43,11 @@ public class FoodController : MonoBehaviour
     public GameObject sprinkles;
     public GameObject marshmallows;
     
+    //toppings variables
+    public bool isCondensed;
+    public bool hasSprinkles;
+    public bool hasMarshmallows;
+
     #endregion
 
     #region Instantiation Methods
@@ -135,6 +135,23 @@ public class FoodController : MonoBehaviour
     }
 
     #endregion
-    
+
+    public static GameObject LoadDango(SkewerSaveData.DangoSaveData dango, SkewerController skewer)
+    {
+        Vector3 position = new Vector3(dango.position[0], dango.position[1], dango.position[2]);
+        Quaternion rotation = Quaternion.Euler(dango.rotation[0], dango.rotation[1], dango.rotation[2]);
+        Vector3 localScale = new Vector3(dango.localScale[0], dango.localScale[1], dango.localScale[2]);
+        Debug.Log(dango.name);
+        GameObject dangoGO = Instantiate(Resources.Load(dango.name, typeof(GameObject)) as GameObject, position, rotation, skewer.transform);
+        dangoGO.transform.localScale = localScale;
+        dangoGO.transform.localPosition = position;
+        dangoGO.transform.localRotation = rotation;
+        FoodController fc = dangoGO.GetComponent<FoodController>();
+        fc.frozen = true;
+        fc.skewered = true;
+        fc.maxYCoordinate = -15;
+        skewer.skeweredItems.Add(dangoGO);
+        return dangoGO;
+    }
     
 }

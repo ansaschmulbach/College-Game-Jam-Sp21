@@ -43,18 +43,18 @@ public class recipeAlgo : MonoBehaviour
     void Start()
     {
 
-        Debug.Log("Actual Recipe Length: ");
-        Debug.Log(recipe.Count);
-        foreach (GameObject i in recipe)
-        {
-            Debug.Log(i.name);
-        }
-        Debug.Log("Full Sequence Length: ");
-        Debug.Log(fullSequence.Count);
-        foreach (GameObject j in fullSequence)
-        {
-            Debug.Log(j.name);
-        }
+        // Debug.Log("Actual Recipe Length: ");
+        // Debug.Log(recipe.Count);
+        // foreach (GameObject i in recipe)
+        // {
+        //     Debug.Log(i.name);
+        // }
+        // Debug.Log("Full Sequence Length: ");
+        // Debug.Log(fullSequence.Count);
+        // foreach (GameObject j in fullSequence)
+        // {
+        //     Debug.Log(j.name);
+        // }
     }
 
     private void Update()

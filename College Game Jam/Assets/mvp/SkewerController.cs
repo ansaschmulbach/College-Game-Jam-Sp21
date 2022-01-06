@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 public class SkewerController : MonoBehaviour
@@ -37,7 +36,6 @@ public class SkewerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log(other.collider.tag);
         if (other.collider.CompareTag("Fruit"))
         {
             GameObject fruit = other.gameObject;
@@ -90,8 +88,8 @@ public class SkewerController : MonoBehaviour
 
     public void SaveAsPrefab()
     {
-        GameObject fullSkewerPrefab = PrefabUtility.SaveAsPrefabAsset(this.gameObject, "Assets/FullSkewer.prefab");
-        fullSkewerPrefab.GetComponent<FollowMouse>().enabled = false;
+        Debug.Log(skeweredItems.Count);
+        SaveSystem.SaveSkewer(this);
     }
     
 }
